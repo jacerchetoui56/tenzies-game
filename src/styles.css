@@ -40,9 +40,9 @@
   width: 70%;
   margin: 1.5rem auto;
   display: grid;
-  grid-template-columns: repeat(5, 3rem);
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(2, 3rem);
+  grid-gap: 1.5rem;
 }
 
 .dice {
@@ -74,4 +74,23 @@
   border-radius: 5px;
   font-family: "Karla", sans-serif;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+  .dices {
+    grid-gap: 1rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 98%;
+  }
+  .dices {
+    width: 90%;
+  }
 }
